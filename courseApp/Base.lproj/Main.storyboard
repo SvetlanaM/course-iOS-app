@@ -144,86 +144,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Suw-1Z-f3f">
-                                <rect key="frame" x="0.0" y="64" width="600" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="aAx-9S-w6G"/>
-                                    <constraint firstAttribute="width" constant="600" id="aQT-X3-uQZ"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-LW-tIb">
-                                <rect key="frame" x="20" y="235" width="505" height="50"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-pink" translatesAutoresizingMaskIntoConstraints="NO" id="PKw-7Q-kLk">
-                                <rect key="frame" x="20" y="289" width="25" height="21"/>
+                                <rect key="frame" x="20" y="250" width="25" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="PH5-0e-2vj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3k-08-vxL">
-                                <rect key="frame" x="61" y="289" width="42" height="21"/>
+                                <rect key="frame" x="61" y="250" width="42" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GcY-LZ-EXz">
-                                <rect key="frame" x="20" y="331" width="560" height="154"/>
+                                <rect key="frame" x="20" y="371" width="560" height="64.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTa-vd-TkI">
-                                <rect key="frame" x="20" y="485" width="125" height="21"/>
+                                <rect key="frame" x="20" y="435.5" width="125" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVs-S3-bdK">
-                                <rect key="frame" x="20" y="562" width="560" height="30"/>
+                                <rect key="frame" x="20" y="513" width="560" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="courseButton:" destination="kZe-Mq-i25" eventType="touchUpInside" id="dwV-SQ-kcx"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-2v-N2x">
+                                <rect key="frame" x="0.0" y="64" width="650" height="170"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-LW-tIb">
+                                <rect key="frame" x="20" y="242" width="56.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HVs-S3-bdK" firstAttribute="leading" secondItem="bTa-vd-TkI" secondAttribute="leading" id="1i6-vc-7pa"/>
-                            <constraint firstItem="X5e-LW-tIb" firstAttribute="top" secondItem="Suw-1Z-f3f" secondAttribute="bottom" constant="21" id="5uM-ec-N5X"/>
                             <constraint firstItem="B3k-08-vxL" firstAttribute="leading" secondItem="PKw-7Q-kLk" secondAttribute="trailing" constant="16" id="85p-T4-FIK"/>
-                            <constraint firstItem="GcY-LZ-EXz" firstAttribute="centerX" secondItem="Suw-1Z-f3f" secondAttribute="centerX" id="8YR-hw-hKX"/>
                             <constraint firstItem="bTa-vd-TkI" firstAttribute="top" secondItem="GcY-LZ-EXz" secondAttribute="bottom" id="Boa-jl-2Uv"/>
                             <constraint firstItem="GcY-LZ-EXz" firstAttribute="leading" secondItem="PKw-7Q-kLk" secondAttribute="leading" id="Da1-D1-wAe"/>
-                            <constraint firstItem="X5e-LW-tIb" firstAttribute="trailing" secondItem="Suw-1Z-f3f" secondAttribute="trailing" constant="-75" id="Ez6-pz-TFH"/>
                             <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="GcY-LZ-EXz" secondAttribute="bottom" constant="115" id="GSe-5s-BqJ"/>
                             <constraint firstItem="GcY-LZ-EXz" firstAttribute="top" secondItem="B3k-08-vxL" secondAttribute="bottom" constant="21" id="JiS-uH-PFW"/>
                             <constraint firstItem="PKw-7Q-kLk" firstAttribute="leading" secondItem="X5e-LW-tIb" secondAttribute="leading" id="Jn0-jp-3Ui"/>
                             <constraint firstItem="X5e-LW-tIb" firstAttribute="centerY" secondItem="2Su-9W-ERW" secondAttribute="centerY" constant="-40" id="Kbr-wi-9c4"/>
                             <constraint firstItem="HVs-S3-bdK" firstAttribute="trailing" secondItem="GcY-LZ-EXz" secondAttribute="trailing" id="MGV-8l-r5C"/>
                             <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="X5e-LW-tIb" secondAttribute="bottom" constant="315" id="Nan-oE-Fze"/>
-                            <constraint firstItem="Suw-1Z-f3f" firstAttribute="leading" secondItem="2Su-9W-ERW" secondAttribute="leading" id="PUK-Gx-CVh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HVs-S3-bdK" secondAttribute="trailing" id="U1M-lt-0uk"/>
                             <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="HVs-S3-bdK" secondAttribute="bottom" constant="8" id="WV3-51-GKB"/>
                             <constraint firstItem="bTa-vd-TkI" firstAttribute="leading" secondItem="GcY-LZ-EXz" secondAttribute="leading" id="Xgh-57-izd"/>
                             <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="bTa-vd-TkI" secondAttribute="bottom" constant="94" id="YGD-Df-3EK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="X5e-LW-tIb" secondAttribute="trailing" constant="47" id="YrH-tu-11T"/>
-                            <constraint firstItem="PKw-7Q-kLk" firstAttribute="top" secondItem="X5e-LW-tIb" secondAttribute="bottom" constant="4" id="aNp-84-Ewm"/>
+                            <constraint firstItem="PKw-7Q-kLk" firstAttribute="top" secondItem="X5e-LW-tIb" secondAttribute="bottom" constant="-20.5" id="aNp-84-Ewm"/>
                             <constraint firstItem="PKw-7Q-kLk" firstAttribute="centerY" secondItem="2Su-9W-ERW" secondAttribute="centerY" id="f4a-3s-0zY"/>
                             <constraint firstItem="X5e-LW-tIb" firstAttribute="leading" secondItem="2Su-9W-ERW" secondAttribute="leadingMargin" id="isb-4T-egB"/>
                             <constraint firstAttribute="leadingMargin" secondItem="PKw-7Q-kLk" secondAttribute="leading" id="jUx-Ez-GV8"/>
                             <constraint firstItem="B3k-08-vxL" firstAttribute="bottom" secondItem="PKw-7Q-kLk" secondAttribute="bottom" id="lrV-Wn-HtU"/>
-                            <constraint firstItem="Suw-1Z-f3f" firstAttribute="top" secondItem="7zu-ic-o0S" secondAttribute="bottom" id="p7V-rw-QqB"/>
                             <constraint firstItem="bTa-vd-TkI" firstAttribute="centerX" secondItem="B3k-08-vxL" secondAttribute="centerX" id="stL-pS-shH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GcY-LZ-EXz" secondAttribute="trailing" id="wpF-rI-aej"/>
                             <constraint firstItem="B3k-08-vxL" firstAttribute="top" secondItem="PKw-7Q-kLk" secondAttribute="top" id="yaX-PE-fXn"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Kbr-wi-9c4"/>
                                 <exclude reference="YrH-tu-11T"/>
+                                <exclude reference="Nan-oE-Fze"/>
                             </mask>
                         </variation>
                     </view>
@@ -232,6 +225,7 @@
                         <outlet property="courseName" destination="X5e-LW-tIb" id="9tJ-Se-XRA"/>
                         <outlet property="courseOrganiser" destination="B3k-08-vxL" id="39T-04-46q"/>
                         <outlet property="coursePrice" destination="bTa-vd-TkI" id="boO-NL-tQN"/>
+                        <outlet property="mapLocation" destination="i4W-2v-N2x" id="AEX-H6-RIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGt-Ea-tRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

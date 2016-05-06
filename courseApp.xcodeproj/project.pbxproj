@@ -16,7 +16,7 @@
 		DCE8BEB81CDCF2E400A1582A /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEB71CDCF2E400A1582A /* CourseTableViewCell.swift */; };
 		DCE8BEBA1CDCF6D000A1582A /* courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEB91CDCF6D000A1582A /* courses.swift */; };
 		DCE8BEBC1CDCFA5700A1582A /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEBB1CDCFA5700A1582A /* CourseDetailViewController.swift */; };
-		DCE8BEC01CDD21FF00A1582A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE8BEBF1CDD21FF00A1582A /* MapKit.framework */; };
+		DCE8BEC01CDD21FF00A1582A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE8BEBF1CDD21FF00A1582A /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import MapKit
 
-class CourseDetailViewController: UIViewController {
+class CourseDetailViewController: UIViewController, MKMapViewDelegate {
+    
+    @IBOutlet weak var mapLocation: MKMapView!
+    var address = "Kloboukova 24, Prague, 14800 Czech Republic"
 
     @IBOutlet weak var courseName: UILabel!
     
@@ -30,6 +34,23 @@ class CourseDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.mapLocation.delegate = self
+        
+        let point = MKPointAnnotation()
+        point.coordinate = CLLocationCoordinate2D(latitude: 50.0382124, longitude: 14.4807136)
+        point.title = "Test"
+        point.subtitle = "Test2"
+        self.mapLocation.addAnnotation(point)
+        
+        var region = self.mapLocation.region as MKCoordinateRegion
+        region.center = point.coordinate
+        region.span.latitudeDelta = 0.002
+        region.span.longitudeDelta = 0.002
+        
+        self.mapLocation.selectAnnotation(point, animated: false)
+        self.mapLocation.setRegion(region, animated: false)
+        
+        
         
         self.courseName.text = courseNameText
         self.courseOrganiser.text = courseOrganiserText
