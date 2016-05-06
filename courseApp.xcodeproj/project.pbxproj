@@ -12,6 +12,11 @@
 		DCE8BEA91CDCB94F00A1582A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE8BEA71CDCB94F00A1582A /* Main.storyboard */; };
 		DCE8BEAB1CDCB94F00A1582A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE8BEAA1CDCB94F00A1582A /* Assets.xcassets */; };
 		DCE8BEAE1CDCB94F00A1582A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE8BEAC1CDCB94F00A1582A /* LaunchScreen.storyboard */; };
+		DCE8BEB61CDCBB8B00A1582A /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEB51CDCBB8B00A1582A /* CourseTableViewController.swift */; };
+		DCE8BEB81CDCF2E400A1582A /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEB71CDCF2E400A1582A /* CourseTableViewCell.swift */; };
+		DCE8BEBA1CDCF6D000A1582A /* courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEB91CDCF6D000A1582A /* courses.swift */; };
+		DCE8BEBC1CDCFA5700A1582A /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEBB1CDCFA5700A1582A /* CourseDetailViewController.swift */; };
+		DCE8BEC01CDD21FF00A1582A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE8BEBF1CDD21FF00A1582A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		DCE8BEAA1CDCB94F00A1582A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCE8BEAD1CDCB94F00A1582A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCE8BEAF1CDCB94F00A1582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE8BEB51CDCBB8B00A1582A /* CourseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
+		DCE8BEB71CDCF2E400A1582A /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		DCE8BEB91CDCF6D000A1582A /* courses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courses.swift; sourceTree = "<group>"; };
+		DCE8BEBB1CDCFA5700A1582A /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		DCE8BEBF1CDD21FF00A1582A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE8BEC01CDD21FF00A1582A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,7 @@
 		DCE8BE971CDCB94F00A1582A = {
 			isa = PBXGroup;
 			children = (
+				DCE8BEBF1CDD21FF00A1582A /* MapKit.framework */,
 				DCE8BEA21CDCB94F00A1582A /* courseApp */,
 				DCE8BEA11CDCB94F00A1582A /* Products */,
 			);
@@ -56,6 +68,10 @@
 			children = (
 				DCE8BEA31CDCB94F00A1582A /* AppDelegate.swift */,
 				DCE8BEA51CDCB94F00A1582A /* ViewController.swift */,
+				DCE8BEB71CDCF2E400A1582A /* CourseTableViewCell.swift */,
+				DCE8BEBB1CDCFA5700A1582A /* CourseDetailViewController.swift */,
+				DCE8BEB51CDCBB8B00A1582A /* CourseTableViewController.swift */,
+				DCE8BEB91CDCF6D000A1582A /* courses.swift */,
 				DCE8BEA71CDCB94F00A1582A /* Main.storyboard */,
 				DCE8BEAA1CDCB94F00A1582A /* Assets.xcassets */,
 				DCE8BEAC1CDCB94F00A1582A /* LaunchScreen.storyboard */,
@@ -135,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE8BEB81CDCF2E400A1582A /* CourseTableViewCell.swift in Sources */,
 				DCE8BEA61CDCB94F00A1582A /* ViewController.swift in Sources */,
+				DCE8BEBA1CDCF6D000A1582A /* courses.swift in Sources */,
+				DCE8BEB61CDCBB8B00A1582A /* CourseTableViewController.swift in Sources */,
+				DCE8BEBC1CDCFA5700A1582A /* CourseDetailViewController.swift in Sources */,
 				DCE8BEA41CDCB94F00A1582A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
