@@ -17,6 +17,7 @@
 		DCE8BEBA1CDCF6D000A1582A /* courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEB91CDCF6D000A1582A /* courses.swift */; };
 		DCE8BEBC1CDCFA5700A1582A /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEBB1CDCFA5700A1582A /* CourseDetailViewController.swift */; };
 		DCE8BEC01CDD21FF00A1582A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE8BEBF1CDD21FF00A1582A /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		DCE8BEC21CDD2C3400A1582A /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8BEC11CDD2C3400A1582A /* CourseInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DCE8BEB91CDCF6D000A1582A /* courses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courses.swift; sourceTree = "<group>"; };
 		DCE8BEBB1CDCFA5700A1582A /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		DCE8BEBF1CDD21FF00A1582A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DCE8BEC11CDD2C3400A1582A /* CourseInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				DCE8BEB71CDCF2E400A1582A /* CourseTableViewCell.swift */,
 				DCE8BEBB1CDCFA5700A1582A /* CourseDetailViewController.swift */,
 				DCE8BEB51CDCBB8B00A1582A /* CourseTableViewController.swift */,
+				DCE8BEC11CDD2C3400A1582A /* CourseInfo.swift */,
 				DCE8BEB91CDCF6D000A1582A /* courses.swift */,
 				DCE8BEA71CDCB94F00A1582A /* Main.storyboard */,
 				DCE8BEAA1CDCB94F00A1582A /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 				DCE8BEBA1CDCF6D000A1582A /* courses.swift in Sources */,
 				DCE8BEB61CDCBB8B00A1582A /* CourseTableViewController.swift in Sources */,
 				DCE8BEBC1CDCFA5700A1582A /* CourseDetailViewController.swift in Sources */,
+				DCE8BEC21CDD2C3400A1582A /* CourseInfo.swift in Sources */,
 				DCE8BEA41CDCB94F00A1582A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

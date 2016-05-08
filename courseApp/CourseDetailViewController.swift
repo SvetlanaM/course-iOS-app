@@ -18,7 +18,9 @@ class CourseDetailViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var courseOrganiser: UILabel!
     
-    @IBOutlet weak var courseDescription: UITextView!
+    
+    
+    @IBOutlet weak var courseDescription: UILabel!
     
     @IBOutlet weak var coursePrice: UILabel!
     
@@ -38,8 +40,8 @@ class CourseDetailViewController: UIViewController, MKMapViewDelegate {
         
         let point = MKPointAnnotation()
         point.coordinate = CLLocationCoordinate2D(latitude: 50.0382124, longitude: 14.4807136)
-        point.title = "Test"
-        point.subtitle = "Test2"
+        point.title = "Impact Hub"
+        point.subtitle = "Praha 12, 12345"
         self.mapLocation.addAnnotation(point)
         
         var region = self.mapLocation.region as MKCoordinateRegion
@@ -56,7 +58,13 @@ class CourseDetailViewController: UIViewController, MKMapViewDelegate {
         self.courseOrganiser.text = courseOrganiserText
         self.courseDescription.text = courseDescriptionText
         self.coursePrice.text = String(coursePriceText)
+        
+        self.navigationItem.title = "All courses"
                 
+    }
+    
+    func testNavbar() {
+        self.navigationItem.title = "All courses"
     }
 
    

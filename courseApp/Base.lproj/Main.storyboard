@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Course Table View Controller-->
+        <!--All courses-->
         <scene sceneID="5SE-o5-NEY">
             <objects>
                 <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="TlL-ia-goJ" customClass="CourseTableViewController" customModule="courseApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,75 +26,67 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin-pink" translatesAutoresizingMaskIntoConstraints="NO" id="2DH-34-nuJ">
                                             <rect key="frame" x="19" y="67" width="25" height="21"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Ag7-Jx-KCj"/>
                                                 <constraint firstAttribute="width" constant="25" id="xmj-Jc-pQ0"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="yHg-9O-XN4"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-pink" translatesAutoresizingMaskIntoConstraints="NO" id="dXo-T6-Ppc">
-                                            <rect key="frame" x="211" y="67" width="25" height="21"/>
+                                            <rect key="frame" x="184" y="66.5" width="20" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="25" id="B8c-dB-5Ym"/>
-                                            </constraints>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-pink" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-Xn-Lc4">
-                                            <rect key="frame" x="556" y="21" width="25" height="33"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="33" id="bwm-Pe-u1E"/>
-                                                <constraint firstAttribute="width" constant="25" id="pQU-2K-S6W"/>
+                                                <constraint firstAttribute="width" constant="20" id="B8c-dB-5Ym"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By8-xe-1Qa">
-                                            <rect key="frame" x="52" y="67" width="109" height="21"/>
+                                            <rect key="frame" x="45" y="66.5" width="109" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="109" id="fQO-zb-ioy"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                            <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-5x-xDK">
-                                            <rect key="frame" x="252" y="67" width="220" height="21"/>
+                                            <rect key="frame" x="209" y="66.5" width="220" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="220" id="csu-Zv-Hlf"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                            <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfL-0H-KKs">
-                                            <rect key="frame" x="19" y="21" width="562" height="25"/>
+                                            <rect key="frame" x="19" y="16" width="562" height="33"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="25" id="QnI-wt-bz1"/>
+                                                <constraint firstAttribute="height" constant="33" id="QnI-wt-bz1"/>
                                                 <constraint firstAttribute="width" constant="562" id="i0K-N3-3R8"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="27"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                            <color key="textColor" red="0.25490196078431371" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="2DH-34-nuJ" firstAttribute="top" secondItem="mfL-0H-KKs" secondAttribute="bottom" constant="21" id="2S7-c1-XO0"/>
+                                        <constraint firstItem="2DH-34-nuJ" firstAttribute="top" secondItem="mfL-0H-KKs" secondAttribute="bottom" constant="18" id="2S7-c1-XO0"/>
                                         <constraint firstItem="By8-xe-1Qa" firstAttribute="bottom" secondItem="2DH-34-nuJ" secondAttribute="bottom" id="3zh-IR-HZy"/>
-                                        <constraint firstItem="dXo-T6-Ppc" firstAttribute="leading" secondItem="By8-xe-1Qa" secondAttribute="trailing" constant="50" id="7IV-tw-12E"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="rDS-Xn-Lc4" secondAttribute="trailing" constant="11" id="BNI-Ox-WI7"/>
-                                        <constraint firstItem="u9c-5x-xDK" firstAttribute="leading" secondItem="dXo-T6-Ppc" secondAttribute="trailing" constant="16" id="FU9-Cp-FQw"/>
+                                        <constraint firstItem="dXo-T6-Ppc" firstAttribute="leading" secondItem="By8-xe-1Qa" secondAttribute="trailing" constant="30" id="7IV-tw-12E"/>
+                                        <constraint firstItem="u9c-5x-xDK" firstAttribute="leading" secondItem="dXo-T6-Ppc" secondAttribute="trailing" constant="5" id="FU9-Cp-FQw"/>
                                         <constraint firstItem="2DH-34-nuJ" firstAttribute="leading" secondItem="mfL-0H-KKs" secondAttribute="leading" id="Fa9-Sq-AhU"/>
                                         <constraint firstItem="mfL-0H-KKs" firstAttribute="leading" secondItem="azK-lm-xBw" secondAttribute="leadingMargin" constant="11" id="J3f-E2-hik"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="2DH-34-nuJ" secondAttribute="bottom" constant="10.5" id="Mcu-zC-GQD"/>
-                                        <constraint firstItem="rDS-Xn-Lc4" firstAttribute="top" secondItem="mfL-0H-KKs" secondAttribute="top" id="RTD-QO-lgM"/>
                                         <constraint firstItem="dXo-T6-Ppc" firstAttribute="bottom" secondItem="By8-xe-1Qa" secondAttribute="bottom" id="T8q-MG-lkP"/>
                                         <constraint firstItem="By8-xe-1Qa" firstAttribute="top" secondItem="2DH-34-nuJ" secondAttribute="top" id="d2B-5s-PIH"/>
                                         <constraint firstItem="u9c-5x-xDK" firstAttribute="top" secondItem="dXo-T6-Ppc" secondAttribute="top" id="eHZ-jp-Mgg"/>
                                         <constraint firstItem="dXo-T6-Ppc" firstAttribute="top" secondItem="By8-xe-1Qa" secondAttribute="top" id="fgb-4S-GoW"/>
-                                        <constraint firstItem="mfL-0H-KKs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="azK-lm-xBw" secondAttribute="topMargin" constant="13" id="gbI-MD-Tgf"/>
+                                        <constraint firstItem="mfL-0H-KKs" firstAttribute="top" secondItem="azK-lm-xBw" secondAttribute="topMargin" constant="8" id="gbI-MD-Tgf"/>
                                         <constraint firstItem="u9c-5x-xDK" firstAttribute="bottom" secondItem="dXo-T6-Ppc" secondAttribute="bottom" id="kdD-3P-EL1"/>
-                                        <constraint firstItem="By8-xe-1Qa" firstAttribute="leading" secondItem="2DH-34-nuJ" secondAttribute="trailing" constant="8" symbolic="YES" id="uDZ-Oa-c5r"/>
+                                        <constraint firstItem="By8-xe-1Qa" firstAttribute="leading" secondItem="2DH-34-nuJ" secondAttribute="trailing" constant="1" id="uDZ-Oa-c5r"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="courseLocation" destination="By8-xe-1Qa" id="NDQ-Bs-6ZK"/>
                                     <outlet property="courseName" destination="mfL-0H-KKs" id="2nb-yn-uvz"/>
                                     <outlet property="courseStartDate" destination="u9c-5x-xDK" id="8Uz-JU-LAU"/>
-                                    <outlet property="courseStateImage" destination="rDS-Xn-Lc4" id="otu-Qd-qvd"/>
                                     <segue destination="kZe-Mq-i25" kind="show" identifier="courseSegueDetail" id="CpN-0h-VPt"/>
                                 </connections>
                             </tableViewCell>
@@ -105,7 +97,7 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="dgh-uZ-Zwf"/>
+                    <tabBarItem key="tabBarItem" title="All courses" image="course-icon" id="dgh-uZ-Zwf"/>
                     <navigationItem key="navigationItem" id="Dze-CY-pNN"/>
                     <value key="contentSizeForViewInPopover" type="size" width="600" height="600"/>
                 </tableViewController>
@@ -144,84 +136,131 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-pink" translatesAutoresizingMaskIntoConstraints="NO" id="PKw-7Q-kLk">
-                                <rect key="frame" x="20" y="250" width="25" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="PH5-0e-2vj"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3k-08-vxL">
-                                <rect key="frame" x="61" y="250" width="42" height="100"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="20" y="281" width="294" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="TOg-gV-Gg2"/>
+                                    <constraint firstAttribute="width" constant="294" id="Uwq-UH-fuS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GcY-LZ-EXz">
-                                <rect key="frame" x="20" y="371" width="560" height="64.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTa-vd-TkI">
-                                <rect key="frame" x="20" y="435.5" width="125" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="20" y="517" width="166" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="ZkA-WH-pW7"/>
+                                    <constraint firstAttribute="height" constant="23" id="ouZ-7o-5Ls"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.25490196078431371" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-2v-N2x">
+                                <rect key="frame" x="0.0" y="64" width="600" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="fzV-MD-7WR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fzV-MD-7WR"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-5r-9PG">
+                                <rect key="frame" x="22" y="327" width="558" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Tiw-5t-EEP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Tiw-5t-EEP"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-LW-tIb">
+                                <rect key="frame" x="20" y="264" width="54" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="BkC-T3-saL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.25490196078431371" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BkC-T3-saL"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVs-S3-bdK">
-                                <rect key="frame" x="20" y="513" width="560" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="0.0" y="501" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.18823529410000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CrD-eg-1sB"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Order course">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="courseButton:" destination="kZe-Mq-i25" eventType="touchUpInside" id="dwV-SQ-kcx"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i4W-2v-N2x">
-                                <rect key="frame" x="0.0" y="64" width="650" height="170"/>
-                            </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-LW-tIb">
-                                <rect key="frame" x="20" y="242" width="56.5" height="28.5"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HVs-S3-bdK" firstAttribute="leading" secondItem="bTa-vd-TkI" secondAttribute="leading" id="1i6-vc-7pa"/>
-                            <constraint firstItem="B3k-08-vxL" firstAttribute="leading" secondItem="PKw-7Q-kLk" secondAttribute="trailing" constant="16" id="85p-T4-FIK"/>
-                            <constraint firstItem="bTa-vd-TkI" firstAttribute="top" secondItem="GcY-LZ-EXz" secondAttribute="bottom" id="Boa-jl-2Uv"/>
-                            <constraint firstItem="GcY-LZ-EXz" firstAttribute="leading" secondItem="PKw-7Q-kLk" secondAttribute="leading" id="Da1-D1-wAe"/>
-                            <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="GcY-LZ-EXz" secondAttribute="bottom" constant="115" id="GSe-5s-BqJ"/>
-                            <constraint firstItem="GcY-LZ-EXz" firstAttribute="top" secondItem="B3k-08-vxL" secondAttribute="bottom" constant="21" id="JiS-uH-PFW"/>
-                            <constraint firstItem="PKw-7Q-kLk" firstAttribute="leading" secondItem="X5e-LW-tIb" secondAttribute="leading" id="Jn0-jp-3Ui"/>
+                            <constraint firstItem="X5e-LW-tIb" firstAttribute="trailing" secondItem="i4W-2v-N2x" secondAttribute="trailing" constant="10" id="5U7-CD-D0v"/>
+                            <constraint firstItem="i4W-2v-N2x" firstAttribute="top" secondItem="7zu-ic-o0S" secondAttribute="bottom" id="BzS-a3-6cl"/>
+                            <constraint firstItem="B3k-08-vxL" firstAttribute="top" secondItem="i4W-2v-N2x" secondAttribute="bottom" constant="47" id="Gir-W9-3f1"/>
+                            <constraint firstItem="B3k-08-vxL" firstAttribute="leading" secondItem="X5e-LW-tIb" secondAttribute="leading" id="HfT-Bx-KsY"/>
+                            <constraint firstItem="bTa-vd-TkI" firstAttribute="leading" secondItem="HVs-S3-bdK" secondAttribute="leading" constant="20" id="KCb-gL-xmd"/>
                             <constraint firstItem="X5e-LW-tIb" firstAttribute="centerY" secondItem="2Su-9W-ERW" secondAttribute="centerY" constant="-40" id="Kbr-wi-9c4"/>
-                            <constraint firstItem="HVs-S3-bdK" firstAttribute="trailing" secondItem="GcY-LZ-EXz" secondAttribute="trailing" id="MGV-8l-r5C"/>
                             <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="X5e-LW-tIb" secondAttribute="bottom" constant="315" id="Nan-oE-Fze"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HVs-S3-bdK" secondAttribute="trailing" id="U1M-lt-0uk"/>
-                            <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="HVs-S3-bdK" secondAttribute="bottom" constant="8" id="WV3-51-GKB"/>
-                            <constraint firstItem="bTa-vd-TkI" firstAttribute="leading" secondItem="GcY-LZ-EXz" secondAttribute="leading" id="Xgh-57-izd"/>
-                            <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="bTa-vd-TkI" secondAttribute="bottom" constant="94" id="YGD-Df-3EK"/>
+                            <constraint firstItem="Ta3-5r-9PG" firstAttribute="leading" secondItem="2Su-9W-ERW" secondAttribute="leadingMargin" constant="2" id="O6v-KE-GWq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ta3-5r-9PG" secondAttribute="leading" id="QZe-ru-Icl"/>
+                            <constraint firstItem="Ta3-5r-9PG" firstAttribute="leading" secondItem="B3k-08-vxL" secondAttribute="leading" id="R0S-oI-Nkm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HVs-S3-bdK" secondAttribute="trailing" constant="-20" id="U1M-lt-0uk"/>
+                            <constraint firstItem="bTa-vd-TkI" firstAttribute="top" secondItem="Ta3-5r-9PG" secondAttribute="bottom" constant="20" id="UvB-Ow-1G1"/>
+                            <constraint firstItem="L0S-zK-0uU" firstAttribute="top" secondItem="HVs-S3-bdK" secondAttribute="bottom" id="WV3-51-GKB"/>
+                            <constraint firstAttribute="bottom" secondItem="bTa-vd-TkI" secondAttribute="bottom" constant="60" id="XUc-QT-Qeq"/>
+                            <constraint firstItem="X5e-LW-tIb" firstAttribute="top" secondItem="i4W-2v-N2x" secondAttribute="bottom" constant="20" id="YJg-7F-bpT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="X5e-LW-tIb" secondAttribute="trailing" constant="47" id="YrH-tu-11T"/>
-                            <constraint firstItem="PKw-7Q-kLk" firstAttribute="top" secondItem="X5e-LW-tIb" secondAttribute="bottom" constant="-20.5" id="aNp-84-Ewm"/>
-                            <constraint firstItem="PKw-7Q-kLk" firstAttribute="centerY" secondItem="2Su-9W-ERW" secondAttribute="centerY" id="f4a-3s-0zY"/>
+                            <constraint firstItem="X5e-LW-tIb" firstAttribute="top" secondItem="i4W-2v-N2x" secondAttribute="top" constant="200" id="Z3G-IS-qSn"/>
+                            <constraint firstItem="B3k-08-vxL" firstAttribute="centerY" secondItem="2Su-9W-ERW" secondAttribute="centerY" id="ayP-ta-gWw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="X5e-LW-tIb" secondAttribute="leading" id="ePL-cB-fLo"/>
                             <constraint firstItem="X5e-LW-tIb" firstAttribute="leading" secondItem="2Su-9W-ERW" secondAttribute="leadingMargin" id="isb-4T-egB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="PKw-7Q-kLk" secondAttribute="leading" id="jUx-Ez-GV8"/>
-                            <constraint firstItem="B3k-08-vxL" firstAttribute="bottom" secondItem="PKw-7Q-kLk" secondAttribute="bottom" id="lrV-Wn-HtU"/>
-                            <constraint firstItem="bTa-vd-TkI" firstAttribute="centerX" secondItem="B3k-08-vxL" secondAttribute="centerX" id="stL-pS-shH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GcY-LZ-EXz" secondAttribute="trailing" id="wpF-rI-aej"/>
-                            <constraint firstItem="B3k-08-vxL" firstAttribute="top" secondItem="PKw-7Q-kLk" secondAttribute="top" id="yaX-PE-fXn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i4W-2v-N2x" secondAttribute="trailing" constant="-20" id="kNO-8I-eCo"/>
+                            <constraint firstItem="i4W-2v-N2x" firstAttribute="centerX" secondItem="HVs-S3-bdK" secondAttribute="centerX" id="kd6-FL-yWg"/>
+                            <constraint firstItem="i4W-2v-N2x" firstAttribute="leading" secondItem="2Su-9W-ERW" secondAttribute="leadingMargin" constant="-20" id="mN5-gX-sg7"/>
+                            <constraint firstItem="HVs-S3-bdK" firstAttribute="top" secondItem="Ta3-5r-9PG" secondAttribute="bottom" constant="90" id="nwT-J1-Muq"/>
+                            <constraint firstItem="Ta3-5r-9PG" firstAttribute="top" secondItem="B3k-08-vxL" secondAttribute="bottom" constant="8" symbolic="YES" id="pP5-HL-BLv"/>
+                            <constraint firstItem="Ta3-5r-9PG" firstAttribute="trailing" secondItem="2Su-9W-ERW" secondAttribute="trailingMargin" id="rFO-p5-dKN"/>
+                            <constraint firstItem="Ta3-5r-9PG" firstAttribute="leading" secondItem="B3k-08-vxL" secondAttribute="leading" constant="-2" id="sLF-Zc-Ysi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="X5e-LW-tIb" secondAttribute="leading" id="v5D-5m-AFf"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="5U7-CD-D0v"/>
                                 <exclude reference="Kbr-wi-9c4"/>
+                                <exclude reference="YJg-7F-bpT"/>
                                 <exclude reference="YrH-tu-11T"/>
+                                <exclude reference="ePL-cB-fLo"/>
+                                <exclude reference="isb-4T-egB"/>
+                                <exclude reference="QZe-ru-Icl"/>
+                                <exclude reference="R0S-oI-Nkm"/>
+                                <exclude reference="sLF-Zc-Ysi"/>
+                                <exclude reference="1i6-vc-7pa"/>
+                                <exclude reference="UvB-Ow-1G1"/>
                                 <exclude reference="Nan-oE-Fze"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="courseDescription" destination="GcY-LZ-EXz" id="LcT-O5-PqI"/>
+                        <outlet property="courseDescription" destination="Ta3-5r-9PG" id="5Ug-NN-XzX"/>
                         <outlet property="courseName" destination="X5e-LW-tIb" id="9tJ-Se-XRA"/>
                         <outlet property="courseOrganiser" destination="B3k-08-vxL" id="39T-04-46q"/>
                         <outlet property="coursePrice" destination="bTa-vd-TkI" id="boO-NL-tQN"/>
@@ -269,6 +308,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ns6-Ti-wyo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -282,12 +322,12 @@
             </objects>
             <point key="canvasLocation" x="355" y="267"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Test-->
         <scene sceneID="KTg-eC-EoZ">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jIQ-bc-VCe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="UtV-hg-HfS"/>
+                    <navigationItem key="navigationItem" title="Test" id="UtV-hg-HfS"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="0yo-Cm-COx">
                         <autoresizingMask key="autoresizingMask"/>
@@ -306,6 +346,7 @@
     </scenes>
     <resources>
         <image name="calendar-pink" width="100" height="100"/>
+        <image name="course-icon" width="28" height="28"/>
         <image name="pin-pink" width="100" height="100"/>
     </resources>
 </document>

@@ -15,7 +15,7 @@ class CourseTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let course1 = Course(courseName: "Programovanie v iOS", courseLocation: "Impact Hub", courseDuration: 5, courseDescription: "Bla bla bla", coursePrice: 123.05, courseOrganiser: "Iveta Tumova", courseInfo: "Nic so sebou")
+        let course1 = Course(courseName: "Programovanie v iOS", courseLocation: "Impact Hub", courseDuration: 5, courseDescription: "Náš workshop se bude věnovat základům práce v programu Zoner Photo Studio. WORKSHOP JE URČEN PRO NAPROSTÉ ZAČÁTEČNICE v úpravě fotografií a pouze pro účastnice s operačním systémem WINDOWS.", coursePrice: 123.05, courseOrganiser: "Daniel Radcliffe", courseInfo: "Nic so sebou")
         
         courses.append(course1)
         
@@ -23,14 +23,17 @@ class CourseTableViewController: UITableViewController {
         let navBar = self.navigationController!.navigationBar
         navBar.tintColor = UIColor.whiteColor()
         navBar.barTintColor = UIColor(red: 197/255.0, green: 48/255.0, blue: 138/255.0, alpha: 1.0)
-        navBar.backgroundColor = UIColor.blueColor()
         navBar.translucent = false
         
-        self.navigationItem.title = "All courses"
         
         
+        navBar.topItem!.title = "a"
+
 
     }
+    
+   
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -55,7 +58,9 @@ class CourseTableViewController: UITableViewController {
         
         cell.courseName.text = courses[indexPath.row].courseName
         cell.courseLocation.text = courses[indexPath.row].courseLocation
-        cell.courseStartDate.text = String(courses[indexPath.row].courseStartDate)
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        cell.courseStartDate.text = String(dateFormatter.stringFromDate(courses[indexPath.row].courseStartDate))
 
         return cell
     }

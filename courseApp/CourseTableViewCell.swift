@@ -16,7 +16,6 @@ class CourseTableViewCell: UITableViewCell {
     
     @IBOutlet weak var courseStartDate: UILabel!
     
-    @IBOutlet weak var courseStateImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
